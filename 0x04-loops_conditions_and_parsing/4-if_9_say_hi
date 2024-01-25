@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# to display "Best School" 10 times to the console
+# displays "Hi" before "Best School" on the 9th iteration
+
+size=0
+
+while [ $size -lt 10 ]
+do
+  if [ $size -eq 9 ]
+  then
+    echo "Hi"
+  fi
+  echo "Best School"
+  (( size++ ))
+done

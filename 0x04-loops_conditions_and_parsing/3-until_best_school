@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# to displays "Best School" 10 times to the console
+
+size=0
+
+until [ $size -eq 10 ]
+do
+  echo "Best School"
+  (( size++ ))
+done
