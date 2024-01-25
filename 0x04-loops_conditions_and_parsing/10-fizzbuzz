@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# to display numbers from 1 to 100
+#   to display "FizzBuzz" if the number is a multiple of 3 and 5.
+#   to display "Fizz" if the number is a multiple of 3.
+#   to display "Buzz" if the number is a multiple of 5.
+#   else, displays the number.
+
+for item in {1..100}
+do
+  if (( item % 3 == 0 && item % 5 == 0 ))
+  then
+    echo "FizzBuzz"
+  elif (( item % 3 == 0 ))
+  then
+    echo "Fizz"
+  elif (( item % 5 == 0 ))
+  then
+    echo "Buzz"
+  else
+    echo "$item"
+  fi
+done
