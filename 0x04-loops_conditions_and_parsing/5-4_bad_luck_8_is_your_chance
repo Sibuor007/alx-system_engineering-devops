@@ -4,13 +4,13 @@
 #   displays  "good luck" in the 8th iteration
 #   displays "Best School" for all other iterations
 
-size = 0
-while [$size -lt 10 ]
+size=0
+while [ $size -lt 10 ]
 do
-	if [$size =eq 3 ]
+	if [ $size -eq 3 ]
 	then
 		echo "bad luck"
-	elif [$size -eq 7 ]
+	elif [ $size -eq 7 ]
 	then
 		echo "good luck"
 	else
